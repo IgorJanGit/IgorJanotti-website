@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Igor Janotti – Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="#hero">IJ</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Igor Janotti</h1>
+      <p class="hero-tagline">Software Developer &amp; Problem Solver</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#experience">View My History</a>
+        <a class="btn btn-outline" href="resume/resume.pdf" download>Download Resume</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">↓</div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-avatar" aria-hidden="true">
+          <div class="avatar-placeholder">IJ</div>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a passionate software developer who loves turning ideas into
+            elegant, high-impact solutions. My journey in technology has taken
+            me through front-end and back-end development, cloud infrastructure,
+            and everything in between.
+          </p>
+          <p>
+            When I'm not coding, I enjoy exploring new frameworks, contributing to
+            open-source projects, and sharing what I learn with the community.
+          </p>
+          <ul class="skills-list">
+            <li>JavaScript / TypeScript</li>
+            <li>React / Next.js</li>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>SQL &amp; NoSQL</li>
+            <li>Cloud (AWS / GCP)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE / HISTORY ===== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience &amp; History</h2>
+      <p class="section-subtitle">
+        Click any role to expand details.
+      </p>
+      <div class="timeline" id="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <button class="timeline-header" aria-expanded="false">
+              <div class="timeline-header-left">
+                <span class="timeline-role">Software Developer</span>
+                <span class="timeline-company">Tech Company Inc.</span>
+              </div>
+              <div class="timeline-header-right">
+                <span class="timeline-period">2022 – Present</span>
+                <span class="timeline-chevron" aria-hidden="true">▾</span>
+              </div>
+            </button>
+            <div class="timeline-body" hidden>
+              <ul>
+                <li>Designed and shipped full-stack features serving 50k+ users.</li>
+                <li>Led migration from monolith to microservices, cutting deploy time by 40%.</li>
+                <li>Mentored two junior developers and ran weekly code-review sessions.</li>
+                <li>Improved CI/CD pipelines, reducing average build time by 35%.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Docker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <button class="timeline-header" aria-expanded="false">
+              <div class="timeline-header-left">
+                <span class="timeline-role">Junior Developer</span>
+                <span class="timeline-company">Startup Studio</span>
+              </div>
+              <div class="timeline-header-right">
+                <span class="timeline-period">2020 – 2022</span>
+                <span class="timeline-chevron" aria-hidden="true">▾</span>
+              </div>
+            </button>
+            <div class="timeline-body" hidden>
+              <ul>
+                <li>Built and maintained REST APIs consumed by mobile and web clients.</li>
+                <li>Collaborated in agile sprints, contributing to bi-weekly releases.</li>
+                <li>Integrated third-party payment and notification services.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Python</span><span>Django</span><span>React</span><span>AWS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <button class="timeline-header" aria-expanded="false">
+              <div class="timeline-header-left">
+                <span class="timeline-role">B.Sc. Computer Science</span>
+                <span class="timeline-company">State University</span>
+              </div>
+              <div class="timeline-header-right">
+                <span class="timeline-period">2016 – 2020</span>
+                <span class="timeline-chevron" aria-hidden="true">▾</span>
+              </div>
+            </button>
+            <div class="timeline-body" hidden>
+              <ul>
+                <li>Graduated with honours (GPA 3.8 / 4.0).</li>
+                <li>Capstone project: real-time collaborative whiteboard app.</li>
+                <li>Teaching assistant for Data Structures &amp; Algorithms.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Algorithms</span><span>OOP</span><span>Databases</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">A selection of things I've built.</p>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-icon" aria-hidden="true">🛒</div>
+          <h3>E-Commerce Platform</h3>
+          <p>Full-stack marketplace with real-time inventory, Stripe checkout, and an admin dashboard.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span>Next.js</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <a class="project-link" href="#" aria-label="View E-Commerce Platform on GitHub">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon" aria-hidden="true">📊</div>
+          <h3>Analytics Dashboard</h3>
+          <p>Interactive data-visualisation tool that ingests CSV/JSON and renders charts on the fly.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span>React</span><span>D3.js</span><span>Python</span>
+            </div>
+            <a class="project-link" href="#" aria-label="View Analytics Dashboard on GitHub">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon" aria-hidden="true">💬</div>
+          <h3>Chat App</h3>
+          <p>Real-time messaging platform with rooms, file sharing, and end-to-end encryption.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span>Socket.io</span><span>React</span><span>Redis</span>
+            </div>
+            <a class="project-link" href="#" aria-label="View Chat App on GitHub">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon" aria-hidden="true">🤖</div>
+          <h3>AI Task Manager</h3>
+          <p>Smart to-do app that uses NLP to auto-categorise tasks and suggest deadlines.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span>Python</span><span>FastAPI</span><span>OpenAI</span>
+            </div>
+            <a class="project-link" href="#" aria-label="View AI Task Manager on GitHub">GitHub ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section class="section section-alt" id="resume">
+    <div class="container resume-container">
+      <h2 class="section-title">Resume</h2>
+      <p class="section-subtitle">
+        Download my resume or view it inline.
+      </p>
+      <div class="resume-actions">
+        <a class="btn btn-primary" href="resume/resume.pdf" download>
+          ⬇ Download PDF
+        </a>
+        <button class="btn btn-outline" id="resumePreviewToggle">
+          👁 Preview Resume
+        </button>
+      </div>
+      <div class="resume-preview" id="resumePreview" hidden>
+        <iframe
+          src="resume/resume.pdf"
+          title="Igor Janotti Resume"
+          width="100%"
+          height="600"
+        ></iframe>
+        <p class="resume-fallback">
+          Can't see the PDF?
+          <a href="resume/resume.pdf" download>Download it here.</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">
+        I'm currently open to new opportunities. Say hi!
+      </p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:igor@example.com" aria-label="Email Igor">
+          <span class="contact-icon" aria-hidden="true">✉</span>
+          igor@example.com
+        </a>
+        <a class="contact-link" href="https://github.com/IgorJanGit" target="_blank" rel="noopener noreferrer" aria-label="Igor's GitHub">
+          <span class="contact-icon" aria-hidden="true">⌨</span>
+          GitHub
+        </a>
+        <a class="contact-link" href="https://linkedin.com/in/igorjanotti" target="_blank" rel="noopener noreferrer" aria-label="Igor's LinkedIn">
+          <span class="contact-icon" aria-hidden="true">💼</span>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Igor Janotti · Built with ♥</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
