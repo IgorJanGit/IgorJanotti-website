@@ -1,0 +1,162 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Igor Janotti} \\ \vspace{1pt}
+    \small (425) 638-3519 $|$ \href{mailto:IgorJ1@live.com}{\underline{IgorJ1@live.com}} $|$
+    \href{https://github.com/IgorJanGit}{\underline{github.com/IgorJanGit}}
+\end{center}
+
+\section{Summary}
+\small{Software Engineer with experience in systems-level development, distributed systems, and networked services. Strong foundation in data structures, operating systems, and concurrent programming. Experienced building and debugging event-driven and device-oriented systems. Interested in low-level infrastructure, energy systems, and high-performance distributed services.}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages}{: C/C++, Python, C\#, Java} \\
+    \textbf{Systems}{: Distributed Systems, Concurrent Programming, Operating Systems Concepts, Event-Driven Architecture} \\
+    \textbf{Networking}{: TCP/IP, Networked Services, Device Communication Protocols (BACnet)} \\
+    \textbf{Cloud \& Infrastructure}{: AWS (Lambda, DynamoDB, S3, SNS), Docker} \\
+    \textbf{Databases}{: MySQL, MongoDB} \\
+    \textbf{Tools}{: Git, Linux, GDB (basic), Node.js} \\
+    \textbf{Core}{: Data Structures, Algorithms, Debugging, Performance Optimization}
+  }}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Pacific Northwest National Laboratory}{Jun 2025 -- May 2026}
+{Software Engineer Intern}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Contributed to a distributed agent-based system for managing real-world energy and building infrastructure}
+  \resumeItem{Developed BACnet device discovery and scanning system to improve visibility of networked building devices}
+  \resumeItem{Implemented networked services enabling communication across distributed system components}
+  \resumeItem{Built event-driven backend features focused on reliability, scalability, and fault tolerance}
+  \resumeItem{Debugged and resolved system-level issues across services, improving runtime stability and performance}
+  \resumeItem{Worked in Linux environments for deployment, testing, and system diagnostics}
+\resumeItemListEnd
+
+\resumeSubheading
+{Bellevue College}{Feb 2024 -- Mar 2024}
+{Teaching Assistant -- Programming Languages (C++)}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Assisted students with debugging C++ programs, focusing on memory management and execution flow}
+  \resumeItem{Reinforced systems concepts including compilation, linking, and runtime behavior}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{VOLTTRON AI: Conversational Smart-Grid Control Interface} $|$ \emph{Python, Pydantic AI, LLMs}}{}
+\resumeItemListStart
+  \resumeItem{Built a model-agnostic conversational interface for VOLTTRON enabling natural language control of smart-grid systems}
+  \resumeItem{Designed AI tool-calling system using Pydantic AI to map user requests to platform operations (agents, drivers, configuration)}
+  \resumeItem{Optimized prompts and tool schemas to support both large cloud models and lightweight local models}
+  \resumeItem{Implemented lazy loading, singleton environment management, and cached path resolution to improve reliability and performance}
+  \resumeItem{Developed modular tool system supporting platform control, configuration management, error analysis, and streaming responses}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Cloud-Based License Plate Processing System} $|$ \emph{C\#, AWS}}{}
+\resumeItemListStart
+  \resumeItem{Designed distributed event-driven pipeline using AWS services for real-time data processing}
+  \resumeItem{Built asynchronous workflows for ingestion, processing, and storage across multiple services}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{AI-Powered CLI Tooling} $|$ \emph{Python}}{}
+\resumeItemListStart
+  \resumeItem{Developed structured command execution system with validation and deterministic behavior}
+  \resumeItem{Focused on safe execution and predictable system interaction}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{FollowBot Companion Robot} $|$ \emph{C++, Python}}{}
+\resumeItemListStart
+  \resumeItem{Implemented real-time navigation and control logic with sensor-driven feedback loops}
+  \resumeItem{Built communication between hardware inputs and system state for responsive behavior}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bellevue College}{Bellevue, WA}
+{Bachelor of Science in Computer Science}{August 2025}
+\resumeItemListStart
+  \resumeItem{GPA: 3.54}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
