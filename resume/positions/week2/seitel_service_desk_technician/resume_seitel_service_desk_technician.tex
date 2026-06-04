@@ -1,0 +1,147 @@
+%-------------------------
+% Tailored resume for Seitel Systems - Service Desk Technician
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Igor Janotti} \\ \vspace{1pt}
+    \small (425) 638-3519 $|$ \href{mailto:IgorJ1@live.com}{\underline{IgorJ1@live.com}} $|$
+    \href{https://github.com/IgorJanGit}{\underline{github.com/IgorJanGit}}
+\end{center}
+
+\section{Summary}
+\small{IT-focused software engineer with hands-on experience troubleshooting distributed systems, supporting reliable operations, and communicating technical issues clearly to mixed audiences. Strong foundation in desktop and server-adjacent environments, cloud-hosted services, and structured problem solving. Motivated by client service, high-quality support, and long-term growth in IT engineering.}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Support \& Operations}{: Advanced troubleshooting, incident triage, root-cause analysis, documentation, user-focused communication} \\
+    \textbf{Systems}{: Windows and Linux environments, networked services, Active Directory/Entra familiarity, Office365 familiarity} \\
+    \textbf{Cloud \& Platform}{: AWS (Lambda, DynamoDB, S3, SNS), hosted solutions concepts, backup and reliability workflows} \\
+    \textbf{Security \& Reliability}{: Service stability practices, defensive configuration mindset, observability, diagnostics} \\
+    \textbf{Tools}{: Git, Python, shell scripting basics, C/C++, C\#, Java}
+  }}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Pacific Northwest National Laboratory}{Jun 2025 -- May 2026}
+{Software Engineer Intern}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Supported a distributed, agent-based infrastructure platform by diagnosing and resolving cross-service technical issues}
+  \resumeItem{Developed device discovery and scanning workflows to improve visibility and operational support for networked systems}
+  \resumeItem{Troubleshot runtime problems in Linux environments and worked with teammates to restore reliable system behavior quickly}
+  \resumeItem{Documented recurring issues, resolution steps, and system behavior to improve team response quality and consistency}
+  \resumeItem{Communicated technical findings to peers and stakeholders in clear, actionable language}
+\resumeItemListEnd
+
+\resumeSubheading
+{Bellevue College}{Feb 2024 -- Mar 2024}
+{Teaching Assistant -- Programming Languages (C++)}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Guided students through debugging workflows and explained technical concepts to non-experts with patience and clarity}
+  \resumeItem{Managed support time across many requests while maintaining quality and responsiveness}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{AI-Powered CLI Tooling} $|$ \emph{Python}}{}
+\resumeItemListStart
+  \resumeItem{Built deterministic command tooling with validation and safe execution paths to reduce operational errors}
+  \resumeItem{Designed for predictable behavior, quick troubleshooting, and clear failure messages}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Cloud-Based Event-Driven Processing Pipeline} $|$ \emph{C\#, AWS}}{}
+\resumeItemListStart
+  \resumeItem{Implemented asynchronous workflows across cloud services with focus on reliability, recovery behavior, and monitoring}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Personal Portfolio Website} $|$ \emph{JavaScript, HTML, CSS}}{}
+\resumeItemListStart
+  \resumeItem{Built and maintained a responsive web project, handling environment setup, issue fixes, and iterative improvements}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bellevue College}{Bellevue, WA}
+{Bachelor of Science in Computer Science}{August 2025}
+\resumeItemListStart
+  \resumeItem{GPA: 3.54}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}

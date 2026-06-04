@@ -1,0 +1,148 @@
+%-------------------------
+% Tailored resume for CoreWeave - Software Engineer, Inference AI/ML
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Igor Janotti} \\ \vspace{1pt}
+    \small (425) 638-3519 $|$ \href{mailto:IgorJ1@live.com}{\underline{IgorJ1@live.com}} $|$
+    \href{https://github.com/IgorJanGit}{\underline{github.com/IgorJanGit}}
+\end{center}
+
+\section{Summary}
+\small{Software engineer with experience in distributed systems, networked services, and event-driven backend development. Strong foundation in data structures, algorithms, Linux fundamentals, and performance-focused debugging. Comfortable building reliable Python services, contributing to C/C++ systems, and working across APIs and cloud infrastructure. Interested in production AI/ML inference systems, latency optimization, and scalable model-serving platforms.}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages}{: Python, C/C++, C\#, Java} \\
+    \textbf{Backend \& Systems}{: Distributed systems, concurrent programming, event-driven architecture, networked services, API development} \\
+    \textbf{Infra \& Platform}{: Linux, Docker, AWS (Lambda, DynamoDB, S3, SNS), Git, CI fundamentals, basic Kubernetes exposure} \\
+    \textbf{Observability \& Reliability}{: Service debugging, system diagnostics, performance tuning, technical documentation} \\
+    \textbf{ML/Inference Exposure}{: LLM tool-calling workflows, prompt optimization, model-agnostic interface design}
+  }}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Pacific Northwest National Laboratory}{Jun 2025 -- May 2026}
+{Software Engineer Intern}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Contributed to a distributed agent-based platform supporting real-world energy and building infrastructure}
+  \resumeItem{Implemented networked services and backend components in Linux environments with a focus on reliability and fault tolerance}
+  \resumeItem{Developed BACnet device discovery and scanning workflows to improve visibility across large sets of networked devices}
+  \resumeItem{Built event-driven service features and optimized runtime behavior by debugging cross-service bottlenecks}
+  \resumeItem{Collaborated with engineers to diagnose production-like issues, improve operational stability, and document service behavior}
+\resumeItemListEnd
+
+\resumeSubheading
+{Bellevue College}{Feb 2024 -- Mar 2024}
+{Teaching Assistant -- Programming Languages (C++)}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Assisted students with debugging and systems-level reasoning, including memory behavior and execution flow}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{VOLTTRON AI: Conversational Smart-Grid Control Interface} $|$ \emph{Python, Pydantic AI, LLMs}}{}
+\resumeItemListStart
+  \resumeItem{Built a model-agnostic conversational interface that maps natural language requests to structured platform operations}
+  \resumeItem{Implemented modular tool-calling and validation layers for configuration, diagnostics, and platform control actions}
+  \resumeItem{Improved responsiveness and reliability with cached path resolution, singleton environment management, and streaming outputs}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Cloud-Based Event-Driven Processing Pipeline} $|$ \emph{C\#, AWS}}{}
+\resumeItemListStart
+  \resumeItem{Designed an event-driven microservice-style pipeline for ingestion, processing, and storage across cloud services}
+  \resumeItem{Built asynchronous workflows to support higher throughput, dependable processing, and clear service boundaries}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{FollowBot Companion Robot} $|$ \emph{C++, Python}}{}
+\resumeItemListStart
+  \resumeItem{Implemented real-time control and sensor feedback loops, balancing responsiveness with stable system behavior}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bellevue College}{Bellevue, WA}
+{Bachelor of Science in Computer Science}{August 2025}
+\resumeItemListStart
+  \resumeItem{GPA: 3.54}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}

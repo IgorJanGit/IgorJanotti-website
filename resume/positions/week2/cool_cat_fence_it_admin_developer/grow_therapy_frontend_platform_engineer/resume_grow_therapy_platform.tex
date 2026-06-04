@@ -1,0 +1,151 @@
+%-------------------------
+% Tailored resume for Grow Therapy – Frontend Platform Engineer
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Igor Janotti} \\ \vspace{1pt}
+    \small (425) 638-3519 $|$ \href{mailto:IgorJ1@live.com}{\underline{IgorJ1@live.com}} $|$
+    \href{https://github.com/IgorJanGit}{\underline{github.com/IgorJanGit}}
+\end{center}
+
+\section{Summary}
+\small{Software engineer with a strong frontend platform foundation and a year of industry experience at Pacific Northwest National Laboratory. Experienced building systems-level frontend infrastructure, CSS design token architectures, accessible component libraries, and event-driven backend services. Background in AI-assisted development, performance optimization, and developer experience tooling. Systems thinker with a bias for reusable abstractions and a founder's ownership mindset.}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Frontend Platform}{: JavaScript/TypeScript, React, Next.js, HTML5, CSS3, CSS custom properties/design tokens, SSR} \\
+    \textbf{Performance \& Observability}{: Core Web Vitals, bundle optimization, accessibility (WCAG/ARIA), responsive design} \\
+    \textbf{Build \& Infra}{: Node.js, Docker, Git, AWS (Lambda, DynamoDB, S3, SNS), Linux, CI/CD pipelines} \\
+    \textbf{AI-Assisted Development}{: GitHub Copilot, LLM tool-calling workflows, prompt engineering, AI-accelerated iteration} \\
+    \textbf{Backend \& Systems}{: Python, C/C++, C\#, distributed systems, event-driven architecture, concurrent programming}
+  }}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Pacific Northwest National Laboratory}{Jun 2025 -- May 2026}
+{Software Engineer Intern}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Contributed to a distributed agent-based platform serving real-world energy and building infrastructure at scale}
+  \resumeItem{Developed platform-level services with clear interface contracts, consistent state boundaries, and reliable fault handling}
+  \resumeItem{Built BACnet device discovery infrastructure, improving observability and coverage across networked system components}
+  \resumeItem{Debugged cross-service runtime issues in Linux environments, improving stability, performance, and system observability}
+  \resumeItem{Created and maintained technical documentation and implementation notes to support team consistency and developer onboarding}
+  \resumeItem{Collaborated with engineers and stakeholders to align on interfaces, surface blockers early, and ship quality work}
+\resumeItemListEnd
+
+\resumeSubheading
+{Bellevue College}{Feb 2024 -- Mar 2024}
+{Teaching Assistant -- Programming Languages (C++)}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Guided students through systems-level reasoning, debugging practices, and consistent problem-solving approaches}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Personal Portfolio Website} $|$ \emph{HTML5, CSS3, JavaScript}}{}
+\resumeItemListStart
+  \resumeItem{Built a mobile-first, accessible portfolio site with a CSS custom-properties design system: tokens for color, spacing, border-radius, and transitions enforcing consistent visual language across all components}
+  \resumeItem{Implemented accessible platform components: aria-driven mobile nav toggle, expandable timeline cards with keyboard navigation, and scroll-driven active section detection}
+  \resumeItem{Applied frontend performance practices: passive event listeners, smooth scroll behavior, progressive enhancement, and zero-framework vanilla JS to minimize bundle overhead}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{VOLTTRON AI: Conversational Smart-Grid Control Interface} $|$ \emph{Python, Pydantic AI, LLMs}}{}
+\resumeItemListStart
+  \resumeItem{Designed AI-native tooling infrastructure that translates natural language into structured platform actions via LLM tool-calling}
+  \resumeItem{Leveraged AI-assisted development (Copilot, prompt engineering) throughout to accelerate iteration and improve code quality}
+  \resumeItem{Built modular, extensible tool system for diagnostics, configuration, and streaming responses -- designed for reuse and governance}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Cloud-Based Event-Driven Processing Pipeline} $|$ \emph{C\#, AWS}}{}
+\resumeItemListStart
+  \resumeItem{Architected a multi-stage event-driven pipeline with clear interface contracts for ingestion, processing, and storage}
+  \resumeItem{Built asynchronous service workflows to support scalable throughput, observability, and reliable delivery}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bellevue College}{Bellevue, WA}
+{Bachelor of Science in Computer Science}{August 2025}
+\resumeItemListStart
+  \resumeItem{GPA: 3.54}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}

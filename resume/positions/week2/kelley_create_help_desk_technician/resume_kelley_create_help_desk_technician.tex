@@ -1,0 +1,151 @@
+%-------------------------
+% Tailored resume for Kelley Create - Help Desk Technician
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Igor Janotti} \\ \vspace{1pt}
+    \small (425) 638-3519 $|$ \href{mailto:IgorJ1@live.com}{\underline{IgorJ1@live.com}} $|$
+    \href{https://github.com/IgorJanGit}{\underline{github.com/IgorJanGit}}
+\end{center}
+
+\section{Summary}
+\small{IT support professional with hands-on experience troubleshooting complex systems, supporting end-users, and maintaining infrastructure reliability. Strong foundation in Windows environments, networked services, and cloud-hosted systems. Driven by customer service excellence, attention to detail, and commitment to resolving technical issues quickly and thoroughly. Experienced in multi-tasking, time management, and thriving in fast-paced support environments.}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Operating Systems}{: Windows (7, 8, 10, Server 2008 R2, Server 2012+), Linux fundamentals, cloud OS concepts} \\
+    \textbf{Support \& Operations}{: Hardware troubleshooting, system diagnostics, incident triage, root-cause analysis, end-user communication, ticket management} \\
+    \textbf{Network \& Infrastructure}{: LAN/WAN connectivity, TCP/IP fundamentals, firewall concepts, remote access (VPN, RDP basics), device configuration} \\
+    \textbf{Microsoft Services}{: Active Directory fundamentals, Exchange email systems, Office 365 familiarity, Microsoft account management} \\
+    \textbf{Ticketing \& Documentation}{: Service ticket systems, incident logging, knowledge base maintenance, SOP documentation} \\
+    \textbf{Languages \& Tools}{: C, C++, C\#, Python, PowerShell basics, Git, command-line troubleshooting}
+  }}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Pacific Northwest National Laboratory}{Jun 2025 -- May 2026}
+{Software Engineer Intern -- Systems Support Focus}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Supported a mission-critical distributed system by diagnosing and resolving cross-service technical issues affecting multiple end-users}
+  \resumeItem{Troubleshot runtime problems across Windows and Linux environments, implementing fixes and documenting resolutions for team knowledge base}
+  \resumeItem{Managed multiple technical requests simultaneously while maintaining detailed documentation and response quality in high-volume periods}
+  \resumeItem{Performed hardware and network diagnostics to identify root causes of system degradation and service outages}
+  \resumeItem{Communicated technical findings to both technical peers and non-technical stakeholders in clear, actionable language}
+  \resumeItem{Worked within service management workflows to track incidents, prioritize escalations, and improve long-term system reliability}
+\resumeItemListEnd
+
+\resumeSubheading
+{Bellevue College}{Feb 2024 -- Mar 2024}
+{Teaching Assistant -- Programming Languages (C++)}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Provided direct end-user support to 30+ students, explaining complex technical concepts and troubleshooting programming issues with patience and clarity}
+  \resumeItem{Managed multiple concurrent support requests while maintaining high-quality assistance and response times}
+  \resumeItem{Adapted communication style to different skill levels and learning needs, ensuring clear understanding across diverse audiences}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{System Monitoring and Reliability Tooling} $|$ \emph{Python, C\#}}{}
+\resumeItemListStart
+  \resumeItem{Built deterministic command tooling with validation and safe execution paths to reduce operational errors}
+  \resumeItem{Designed for predictable behavior, quick troubleshooting, and clear failure messages for support teams}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Infrastructure and Event-Driven Services} $|$ \emph{C\#, AWS}}{}
+\resumeItemListStart
+  \resumeItem{Implemented asynchronous workflows across cloud services with focus on reliability, recovery behavior, and alerting}
+  \resumeItem{Designed systems for observability and quick incident response in distributed environments}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Device Discovery and Network Visibility} $|$ \emph{Python}}{}
+\resumeItemListStart
+  \resumeItem{Developed workflow to scan and catalog networked devices, improving operational visibility and support efficiency}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bellevue College}{Bellevue, WA}
+{Bachelor of Science in Computer Science}{August 2025}
+\resumeItemListStart
+  \resumeItem{GPA: 3.54}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}

@@ -1,0 +1,150 @@
+%-------------------------
+% Tailored resume for Grow Therapy – Web Frontend Engineer
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Igor Janotti} \\ \vspace{1pt}
+    \small (425) 638-3519 $|$ \href{mailto:IgorJ1@live.com}{\underline{IgorJ1@live.com}} $|$
+    \href{https://github.com/IgorJanGit}{\underline{github.com/IgorJanGit}}
+\end{center}
+
+\section{Summary}
+\small{Software engineer with a strong frontend foundation and a year of industry experience at Pacific Northwest National Laboratory. Experienced building responsive, accessible web interfaces with JavaScript, CSS systems, and component-driven architecture. Background in AI-assisted development workflows, distributed systems, and event-driven services. Eager to bring craftsmanship, systems thinking, and a bias for action to frontend platform work.}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Frontend}{: JavaScript (ES6+), TypeScript, React, HTML5, CSS3, CSS custom properties, responsive design, accessibility (ARIA)} \\
+    \textbf{Tooling \& Build}{: Node.js, Git, Docker, AWS (Lambda, DynamoDB, S3, SNS)} \\
+    \textbf{AI-Assisted Development}{: LLM workflows, prompt design, tool-calling architectures, AI-accelerated coding} \\
+    \textbf{Backend \& Systems}{: Python, C/C++, C\#, distributed systems, event-driven services, Linux} \\
+    \textbf{Core}{: Component architecture, performance optimization, cross-functional collaboration, technical documentation}
+  }}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Pacific Northwest National Laboratory}{Jun 2025 -- May 2026}
+{Software Engineer Intern}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Built and maintained components in a distributed agent-based platform serving real-world energy and infrastructure systems}
+  \resumeItem{Developed event-driven services with clear state boundaries, consistent interfaces, and reliable fault handling}
+  \resumeItem{Wrote and maintained technical documentation and implementation notes to support team consistency and onboarding}
+  \resumeItem{Collaborated with engineers and stakeholders to align on interfaces, surface issues early, and ship quality work}
+  \resumeItem{Worked in Linux environments for deployment, debugging, and system-level diagnostics}
+\resumeItemListEnd
+
+\resumeSubheading
+{Bellevue College}{Feb 2024 -- Mar 2024}
+{Teaching Assistant -- Programming Languages (C++)}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Explained complex systems concepts to students at multiple experience levels with clarity and patience}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Personal Portfolio Website} $|$ \emph{HTML5, CSS3, JavaScript}}{}
+\resumeItemListStart
+  \resumeItem{Designed and built a responsive, accessible portfolio site with mobile-first layout and smooth scroll behavior}
+  \resumeItem{Implemented a CSS custom-properties design system with tokens for color, spacing, radius, and transitions, enabling consistent visual language across all components}
+  \resumeItem{Built accessible interactive components including an aria-driven mobile nav toggle, expandable timeline cards, and keyboard-navigable section links}
+  \resumeItem{Applied performance best practices: passive event listeners, progressive enhancement, and no-framework vanilla JS}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{VOLTTRON AI: Conversational Smart-Grid Control Interface} $|$ \emph{Python, Pydantic AI, LLMs}}{}
+\resumeItemListStart
+  \resumeItem{Built an AI-native interface translating natural language into structured platform actions using LLM tool-calling}
+  \resumeItem{Leveraged AI-assisted development workflows throughout, using LLM tools to accelerate iteration and code quality}
+  \resumeItem{Designed modular tool system for diagnostics, configuration, and streaming responses}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Cloud-Based License Plate Processing System} $|$ \emph{C\#, AWS}}{}
+\resumeItemListStart
+  \resumeItem{Architected an event-driven cloud pipeline with clear stage interfaces for ingestion, processing, and storage}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bellevue College}{Bellevue, WA}
+{Bachelor of Science in Computer Science}{August 2025}
+\resumeItemListStart
+  \resumeItem{GPA: 3.54}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}

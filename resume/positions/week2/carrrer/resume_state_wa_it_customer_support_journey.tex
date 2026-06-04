@@ -1,0 +1,147 @@
+%-------------------------
+% Tailored resume for WA DNR - IT Customer Support Journey (IT Service Desk Technician)
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Igor Janotti} \\ \vspace{1pt}
+    \small (425) 638-3519 $|$ \href{mailto:IgorJ1@live.com}{\underline{IgorJ1@live.com}} $|$
+    \href{https://github.com/IgorJanGit}{\underline{github.com/IgorJanGit}}
+\end{center}
+
+\section{Summary}
+\small{IT support professional with experience troubleshooting enterprise-adjacent systems, restoring service quickly, and improving support documentation. Strong background in incident triage, root-cause analysis, and user-focused communication across technical and non-technical audiences. Ready to contribute as a Tier 2 escalation resource supporting Microsoft 365, SharePoint Online, endpoint lifecycle operations, and continuous service improvement.}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Service Desk \& Support}{: Tier 1/Tier 2 troubleshooting, incident triage, root-cause analysis, escalation support, end-user training} \\
+    \textbf{Microsoft Ecosystem}{: Microsoft 365 support familiarity (Outlook, Teams, OneDrive, SharePoint Online), account and access administration, Intune fundamentals} \\
+    \textbf{Systems \& Devices}{: Desktop/laptop troubleshooting, reimaging and deployment workflows, peripheral and mobile device support, Linux and Windows environments} \\
+    \textbf{Operations \& Compliance}{: Knowledge base and SOP documentation, service continuity practices, CJIS-aware data handling mindset} \\
+    \textbf{Platforms \& Tools}{: Git, Python, C/C++, C\#, AWS fundamentals, ticket-driven support workflows}
+  }}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Pacific Northwest National Laboratory}{Jun 2025 -- May 2026}
+{Software Engineer Intern -- Systems Operations Support}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Diagnosed and resolved complex issues across distributed services, acting as a dependable escalation point for technical incidents}
+  \resumeItem{Built and supported device discovery workflows that improved visibility into networked infrastructure and reduced troubleshooting time}
+  \resumeItem{Performed cross-platform troubleshooting in Linux and enterprise tooling environments to restore service continuity}
+  \resumeItem{Collaborated with teammates and stakeholders to coordinate issue resolution, track dependencies, and communicate clear status updates}
+  \resumeItem{Authored technical documentation and repeatable resolution steps that improved support quality and onboarding speed}
+\resumeItemListEnd
+
+\resumeSubheading
+{Bellevue College}{Feb 2024 -- Mar 2024}
+{Teaching Assistant -- Programming Languages (C++)}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Provided front-line user support by troubleshooting code and environment issues for students with varied technical backgrounds}
+  \resumeItem{Explained technical concepts clearly, helping users resolve issues efficiently while improving confidence and self-sufficiency}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{VOLTTRON AI: Conversational Smart-Grid Control Interface} $|$ \emph{Python, Pydantic AI}}{}
+\resumeItemListStart
+  \resumeItem{Implemented structured tool-calling workflows and operational safeguards to reduce command errors in production-like environments}
+  \resumeItem{Improved observability and failure handling paths, enabling faster diagnosis and recovery from runtime issues}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Cloud-Based Event Processing Pipeline} $|$ \emph{C\#, AWS}}{}
+\resumeItemListStart
+  \resumeItem{Developed asynchronous services with emphasis on reliability, event traceability, and maintainable operational workflows}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Device Discovery and Network Visibility} $|$ \emph{Python, BACnet}}{}
+\resumeItemListStart
+  \resumeItem{Created scanning and inventory functionality for connected devices to support faster incident triage and system health checks}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bellevue College}{Bellevue, WA}
+{Bachelor of Science in Computer Science}{August 2025}
+\resumeItemListStart
+  \resumeItem{GPA: 3.54}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}

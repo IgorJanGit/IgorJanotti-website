@@ -1,0 +1,147 @@
+%-------------------------
+% Tailored resume for Visa - SW Test Engineer, Gateway Services
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Igor Janotti} \\ \vspace{1pt}
+    \small (425) 638-3519 $|$ \href{mailto:IgorJ1@live.com}{\underline{IgorJ1@live.com}} $|$
+    \href{https://github.com/IgorJanGit}{\underline{github.com/IgorJanGit}}
+\end{center}
+
+\section{Summary}
+\small{Software engineer with experience building and validating distributed systems, networked services, and automation-oriented tooling. Strong foundation in Python, data structures, Linux systems, and debugging complex service interactions. Comfortable collaborating with developers to improve software quality through structured testing, reproducible tooling, and reliable integration workflows.}
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages}{: Python, Java, C/C++, C\#} \\
+    \textbf{Testing \& Automation}{: Test scripting, structured validation flows, automation tooling, regression-minded debugging} \\
+    \textbf{Systems \& Platforms}{: Linux, Windows familiarity, distributed systems, networked services, event-driven architecture} \\
+    \textbf{Developer Tools}{: Git, Visual Studio Code, IntelliJ familiarity, shell scripting basics, CI fundamentals} \\
+    \textbf{Core}{: Data structures, algorithms, troubleshooting, analytical problem solving, technical communication}
+  }}
+\end{itemize}
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Pacific Northwest National Laboratory}{Jun 2025 -- May 2026}
+{Software Engineer Intern}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Contributed to a distributed agent-based system for managing real-world energy and building infrastructure}
+  \resumeItem{Implemented and validated networked services across Linux environments, improving runtime reliability and cross-service behavior}
+  \resumeItem{Developed BACnet device discovery and scanning workflows to improve visibility and support repeatable system verification}
+  \resumeItem{Debugged software issues across services, analyzed runtime behavior, and worked with engineers to resolve defects efficiently}
+  \resumeItem{Documented implementation details and troubleshooting findings to support integration efforts and team knowledge sharing}
+\resumeItemListEnd
+
+\resumeSubheading
+{Bellevue College}{Feb 2024 -- Mar 2024}
+{Teaching Assistant -- Programming Languages (C++)}{Bellevue, WA}
+\resumeItemListStart
+  \resumeItem{Assisted students with debugging, code correctness, and structured problem solving around execution flow and memory behavior}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{AI-Powered CLI Tooling} $|$ \emph{Python}}{}
+\resumeItemListStart
+  \resumeItem{Developed structured command execution tooling with validation and deterministic behavior for repeatable automation workflows}
+  \resumeItem{Built software to improve the reliability and usability of developer-facing tooling under varied runtime conditions}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{VOLTTRON AI: Conversational Smart-Grid Control Interface} $|$ \emph{Python, Pydantic AI, LLMs}}{}
+\resumeItemListStart
+  \resumeItem{Built modular software layers that translate user requests into validated platform actions for diagnostics and control}
+  \resumeItem{Focused on integration reliability, clear system boundaries, and observable behavior across complex workflows}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Cloud-Based License Plate Processing System} $|$ \emph{C\#, AWS}}{}
+\resumeItemListStart
+  \resumeItem{Designed and implemented asynchronous workflows across multiple services for ingestion, processing, and storage}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bellevue College}{Bellevue, WA}
+{Bachelor of Science in Computer Science}{August 2025}
+\resumeItemListStart
+  \resumeItem{GPA: 3.54}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
